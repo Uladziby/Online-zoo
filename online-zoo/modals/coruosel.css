@@ -1,0 +1,15 @@
+#carousel {
+  overflow: auto;
+  scroll-behavior: smooth;
+}
+
+#content {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 16px;
+  grid-auto-flow: column;
+  margin: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/*# sourceMappingURL=coruosel.css.map */

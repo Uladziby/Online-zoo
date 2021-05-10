@@ -1,0 +1,290 @@
+@import "../styles/style.scss";
+@import "../styles/variables.scss";
+@import "../styles/mixines.scss";
+
+.container{
+    position: relative;
+    max-width: 1920px;
+    min-width: 320px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.zoos_content{
+   max-width: 1920px;
+    margin: 0 auto;
+    display: flex; 
+    margin: 5rem 10rem;
+    position: relative;
+    
+}
+.page_header{
+    max-width: 1920px;
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    display: flex;  
+    
+}
+
+
+.page_wrapper{
+    max-width: 1920px;
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    display: flex;
+    background: url(../assets/zoos-bg.svg) center 190rem no-repeat;
+}
+
+.zoos_sidebar{
+    height: 40%;
+    position: sticky;
+    margin: 4rem 0 0 22rem;
+    top: 4rem;
+    &__list{
+        gap: 4rem; 
+        padding: 0;
+        list-style-type: none;
+        height: 100%;
+        
+        display: flex;
+        flex-direction: column;
+        &__item{  
+            
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            cursor: pointer;
+            
+            &_mask{
+                position: absolute;
+                opacity: 0;
+                width: 105px;
+                height: 95px;
+                transition: transform 0.5s ease-in-out;
+                mask: url(../assets/icons/icon-mask.svg);
+                background-color: $color-btn-text;
+            }
+            &_img{
+                margin: 6px 0rem;
+                clip-path: url(#mask_animal);
+                width: 107px;
+                height: 74px;
+                object-fit: cover;
+                border-style: none;
+            }
+        }
+        &__item:hover .zoos_sidebar__list__item_mask{
+            opacity: 1;
+            transform: rotate(1turn);
+        }
+        @include icons_animals;
+      
+    }
+    
+}
+
+.header_login__search-input{
+    background: transparent;
+    border: none;
+    outline: none;
+    @include Rubik-normal;
+}
+
+
+.active{
+    display: block;
+}
+.non-active{
+    display:none;
+}
+
+.btn_favorite{
+ cursor: pointer;
+ border: none;
+ background: transparent;
+}
+.zoos_content{
+    display: flex;
+    flex-direction: column;
+    &__header{
+        padding: 4.2rem 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &-title{
+        @include Rubik-normal;
+            
+        }
+        &-btns{
+            display: flex;
+            justify-content: space-around;
+            width: 118px;
+            button:first-child{
+                width: 118px;
+                align-items: center;
+                width: 42px;
+                height: 42px;
+                
+                border-radius: 50%;
+                
+                
+            img{
+                background: rgba(255, 255, 255, 0.4);
+                
+                cursor: pointer;
+                border: 0px solid $color-logo;
+            }
+            }
+            
+
+        }
+    }
+    &__player{
+        display: flex;
+        flex-direction: column;    
+        width: 100%;
+        justify-content: center;
+        
+        h3{
+            justify-content: flex-start;
+            display: flex;
+            width: 100%;
+            @include Rubik-normal;
+            font-size: 18px;
+            line-height: 21px;
+        }
+    
+        &-list{
+            
+            padding-top: 5.6rem;
+            h4{
+                @include Rubik-normal-18;
+            }
+        }
+    }   
+}
+.main-cameras__video{
+    width: 130rem; 
+    height: 60rem;
+}
+
+.side-cameras{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    width: 33.3%;
+    .sliders{
+        cursor: pointer;
+        
+        .sliders__topBtn{
+            transform: rotate(180deg);
+            
+        }
+  
+    }
+    .sliders:hover{
+       transform: scale(1.5);
+  
+    }
+    
+}
+
+.zoos_info{
+    padding: 9.7rem 0;
+    color: #0D444D;
+    display: flex;
+
+    &__about{
+        display: flex;
+        flex-direction: column;
+         max-width: 50rem;
+        a{
+            text-decoration: none;
+            color: #0D444D;
+            
+        }
+        
+        &_title{
+            @include Rubik-normal;
+            
+        }
+
+        &_list{
+            &-items{
+                
+                .item{
+                    @include Roboto-normal;
+                    p{
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+        }
+    }
+    &__facts{
+        
+        display: flex;
+        flex-direction: column;
+        max-width: 60.5rem;
+        .title{
+            @include Rubik-normal;   
+        }
+        &_list{
+            list-style: none;
+            
+            &-item{
+                @include Roboto-normal;
+                font-size: 1.4rem;
+                
+                padding-bottom: 2.1rem;
+                position: relative;
+            }
+            &-item:before{
+                content: "";
+                position: absolute;
+                margin-right: 10px;
+                left: -3rem;
+                width: 2rem;
+                height: 1.5rem;
+                background: url(../assets/icons/piaro.svg) no-repeat;
+            }
+        }
+    }
+
+}
+.zoos_bottom{
+   
+    &__wrapper{
+        height: 40rem;
+        display: flex;
+       
+        justify-content: center;
+        align-items: flex-end;
+        padding-bottom: 6.8rem;
+    }
+    
+    a{
+        width: 35.6rem;
+        height: 5.2rem;
+        text-decoration: none;
+        @include Rubik-normal-18;
+        background: #c5e1e6;
+        border-radius: 100px;
+        letter-spacing: -.05em;
+        text-transform: uppercase;
+        padding: 14px 78px;
+        filter: drop-shadow(0 2px 20px rgba(185,213,217,.6));
+        transition: background-color .3s,color .3s,filter .3s;
+    }
+    a:hover{
+        color: #c5e1e6;
+        background-color: #19707d;
+        filter: drop-shadow(0 2px 50px rgba(57,176,192,.6));
+    }  
+}
+
+@import "media_zoos";

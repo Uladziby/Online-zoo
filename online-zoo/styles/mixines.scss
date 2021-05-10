@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap');
+
+@mixin circle-icon {
+    background-color: white;
+    width: 150px;
+    border-radius: 50%;
+    height: 150px;
+    padding-bottom: 1.5rem;
+}
+@mixin H1_rubik {
+    font-family: 'Rubik', sans-serif;
+    font-size: 7.2rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 8.5rem;
+    letter-spacing: 0em;
+    text-align: left;
+}
+@mixin Roboto_Mono {
+    font-family: 'Roboto Mono', monospace;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    letter-spacing: -0.05px;
+    text-transform: uppercase;
+}
+
+@mixin Roboto-normal {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+}
+
+@mixin Rubik-normal {
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+    text-transform: uppercase; 
+}
+@mixin Rubik-normal-18 {
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.1rem;
+    text-transform: uppercase; 
+}
+
+@mixin Roboto-italic {
+    text-transform: uppercase; 
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: normal;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+}
+
+@mixin author{
+    .bg-opinie{
+      
+        padding: 4rem 1rem;
+        background: url(../assets/others/fieldOpinie.svg) center no-repeat;
+        background-size: cover;
+        .date{
+            margin: 0;
+            @include Roboto-normal;
+            color: #B2B2B2;
+            padding: 2rem;
+        }
+        
+        .text{
+            @include Roboto-italic;
+            padding: 0 2rem;
+            color: #2D2D2D; 
+        }
+    }
+    .author{
+        display: flex;
+        align-items: center;
+       p{
+           padding-left: 1rem;
+       }
+    }  
+}
+
+@mixin animals-section2 {
+            background-color: #FFFFFF;
+            width: 48rem;
+            height: 36rem;
+            border-radius: 5%;
+            border: Solid  rgba(185, 213, 217, 0.2);
+            
+            .frame{
+                display: block;
+                margin: 2rem auto;
+                width: 23rem;
+                height: 22rem;
+                border-radius: 120% 120% 170% 100% / 120% 120% 150% 150%;
+                transition: transform 2s;
+                cursor: pointer;
+            }
+            .gframe:hover{
+                background-color: #FFFFFF;
+                animation: move  1s linear infinite;   
+            }
+            .frame::before {
+                content: ""; position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+                transition: transform 2s;
+            } 
+            .frame:hover {transform: rotate(360deg);}
+            .frame:hover::before {transform: rotate(-360deg);}
+}
+
+@mixin animation-frame {
+            margin: 2rem 2rem 0 0;
+            width: 48rem;
+            height: 36.4rem;
+            background-color: #FFFFFF;
+            box-shadow: 0 2px 30px rgba(0, 0, 0 , 0.06);
+            border-radius: 10px;
+            
+            
+            .card{
+                text-decoration: none;
+                .frame {
+                    width: 27rem;
+                    height: 22rem;
+                    margin: 2.6rem 12.5rem;;
+                    position: relative; overflow: hidden; 
+                    border-radius: 120% 120% 170% 100% / 120% 120% 150% 150%;
+                    transition: transform 0.5s;
+                  }
+                  .frame_mask{
+                    content: ""; position: absolute; top: -10px; left: -10px; right: -10px; bottom: -10px;
+                  }
+                  
+                  .frame_mask::before {
+                    content: ""; position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+                    transition: transform 0.5s;
+                  }
+                  .frame:hover {transform: rotate(360deg);}
+                  .frame_mask:hover::before {transform: rotate(-360deg);}
+            }
+}
+       
+@mixin look-animal {
+                background-color: #FFFFFF;
+                border-radius: 5%;
+                border: Solid  rgba(185, 213, 217, 0.2);      
+                    display: block;
+                    margin: 2rem auto;
+                    width: 7.6rem;
+                    height: 7.3rem;
+                    border-radius: 49% 51% 50% 50%  / 86% 32% 68% 14% ;
+                    cursor: pointer;
+} 
+
+@mixin animation-mask {
+    &-item{   
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+        cursor: pointer;
+        
+        &_mask{
+            position: absolute;
+            opacity: 0;
+            width: 105px;
+            height: 95px;
+            transition: transform 0.5s ease-in-out;
+            mask: url(../assets/icons/icon-mask.svg);
+            background-color: #2A8086;
+        }
+        &_img{
+            margin: 6px 0rem;
+            clip-path: url(#mask_animal);
+            width: 107px;
+            height: 74px;
+            object-fit: cover;
+            border-style: none;
+        }
+    }
+    &-item:hover .look__list-item_mask{
+        opacity: 1;
+        transform: rotate(1turn);
+    }
+}
+@mixin btn_login_1200 {
+    .header_login__search-login{
+        
+        background: transparent;
+        border: 0px;
+        cursor: pointer;
+    }
+    .header_login__search-login:hover{
+        transform: scale(1.2);
+        
+    }
+}
+@mixin icons_animals {
+    &__item #Pandas{      
+        background: url(../assets/Mask_pandas.png) center no-repeat;
+    }
+    &__item #Gorillas{
+        background: url(../assets/icons/gorilas_mask.png) center no-repeat;
+    }
+    &__item #EaglesImg{
+        background: url(../assets/icons/eagles_mask.png) center no-repeat;
+    }
+    &__item #Aligators{
+        background: url(../assets/icons/mask_aligators.png) center no-repeat;
+    }  
+}
+
+

@@ -1,0 +1,51 @@
+.gallery_content#carousel {
+  overflow: auto;
+  scroll-behavior: smooth;
+}
+
+#carousel::-webkit-scrollbar {
+  height: 0;
+}
+
+.gallery_content__items#content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+  -ms-grid-columns: (48.4rem)[3];
+      grid-template-columns: repeat(3, 48.4rem);
+  grid-gap: 20px;
+  grid-auto-flow: column;
+  margin: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#testi_carousel {
+  overflow: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+#testi_carousel::-webkit-scrollbar {
+  height: 0;
+}
+
+#testi_content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  -ms-grid-columns: (36rem)[10];
+      grid-template-columns: repeat(10, 36rem);
+  grid-gap: 100px;
+  grid-auto-flow: column;
+  margin: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.testimonials__context-item {
+  width: 100%;
+}
+/*# sourceMappingURL=caruosel.css.map */

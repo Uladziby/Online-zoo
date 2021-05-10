@@ -1,0 +1,42 @@
+@import "../styles/style.scss";
+@import "../styles/variables.scss";
+@import "../styles/mixines.scss";
+
+.page404_wrapper{
+        max-width: 1920px;
+        margin: 0 auto;
+       
+}
+
+    .page404__bg{
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        background: url(./Donate-illustrations.svg) center 57rem no-repeat;
+        height: 100rem;
+
+        h2{
+            @include Roboto_Mono;
+            font-size: 30rem;
+            color: $color_logo;
+        }
+        a{
+            text-decoration: none;
+            color: $color_white__primary;
+        }
+        button{
+            cursor: pointer;
+            width: 24.7rem;
+            height: 5.2rem;
+            border-radius: 100px;
+            @include Roboto_Mono;
+            line-height: 1.4rem;
+            color: #C5E1E6;
+            background-color: #2A8086;
+        }
+        button:hover{
+            background-color: $color_logo;
+        }
+        
+    }
+
