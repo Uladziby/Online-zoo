@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,OAAO,CAAC,2EAAI;AACZ,OAAO,CAAC,yFAAI",
+    "sources": [
+        "mixines.scss"
+    ],
+    "names": [],
+    "file": "mixines.css"
+}
