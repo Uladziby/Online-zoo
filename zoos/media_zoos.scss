@@ -1,0 +1,53 @@
+@import "../styles/style.scss";
+@import "../styles/mixines.scss";
+
+
+@media screen and (max-width: 320px) {
+    .page_header {
+        position: relative;
+        z-index: 10;
+        top: 0;
+    }
+    .zoos__wrapper{
+        margin: 2rem 9rem 0 2rem;
+    }
+
+    .main-cameras__video{
+        width: 30rem; 
+        height: 17.7rem;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .page_header {
+        position: relative;
+        z-index: 10;
+        top: 0;
+    }
+    .zoos__wrapper{
+        margin: 2rem 9rem 0 2rem;
+    }
+
+    .main-cameras__video{
+        width: 53rem; 
+        height: 31.4rem;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .page_header {
+        position: relative;
+        z-index: 10;
+        top: 0;
+    }
+    .zoos_section{
+        .zoos__wrapper{
+            margin: 3rem 9rem 0 3rem;
+        }
+    }
+    .main-cameras__video{
+        width: 100rem; 
+        height: 60rem;
+    }
+    
+}

@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>online-zoo</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./modals/modal-style.css">
+    <link rel="stylesheet" href="./modals/caruosel.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&family=Rubik&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="page_wrapper">
+        <header class="page_header">
+            <div class="page_header__wrapper">
+                <div class="header__logo">
+                    <div class="header__logo-title">
+                        <a href="./index.html"><b>online<br> z</b>
+                            <img src="./assets/icons/eyes.svg" alt="eyes">
+                        </a>
+                        <h1>online zoo</h1>
+                    </div>
+                </div>
+                <div class="header_menu" id="header_menu">
+                    <nav class="header_menu-nav">
+                        <ul class="header_menu-nav__items">
+                            <li class="header_menu-nav__items-item item_active"><a href="./index.html">about</a></li>
+                            <li class="header_menu-nav__items-item"><a href="./map-page/map.html">map</a></li>
+                            <li class="header_menu-nav__items-item"><a href="./zoos/zoos.html">zoos</a></li>
+                            <li class="header_menu-nav__items-item"><a href="./page404/page404.html">contact us</a></li>
+                            <li class="header_menu-nav__items-item"><a href="https://www.figma.com/file/vzrwoqf0kSG1uOify8BRBR/online-zoo">design</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header_login">
+                    <div class="header_login__search">
+                        <input class="header_login__search-input">
+                        <img src="./assets/icons/search.svg" alt="search">
+                    </div>
+                    <div class="header_login__log" >
+                        <button id="logIn">log in</button>
+                    </div>
+                    <div class="header_login__sign" >
+                       <button id="signUp">sign up</button>
+                    </div>
+                    <div class="header_login__search-login btns">
+                        <button class="header_login__search-login" id="btn_login">
+                            <img src="./assets/icons/login1200.svg" alt="login">
+                        </button>
+                        <button id="nickname"></button>
+                    </div>
+                </div>
+                <button class="header_btn-menu" id="burger_menu">
+                    <img src="./assets/icons/Burger-menu.svg" alt="btn-menu">
+                </button>
+            </div>
+        </header>
+        <main class="page_main">
+            <section class="main_section">
+                <div class="section1__wrapper">
+                    <div class="main_section__left">
+                        <div class="main_section__left-title">
+                                <span> Watch your favorite</span><br>
+                                <span><b>animals online</b></span>
+                        </div>
+                         <div class="main_section__left-context">
+                                Observe different animals from around the world online in live time. Help vulunteers to take a good care of animals, donate to your favorite ones.
+                        </div>
+                        <div class="main_section__left-btn">
+                                <button onclick="location.href = './zoos/zoos.html'" ><b> Watch now</b></button>
+                                <button class="btn-donate" ><b> Donate</b></button>
+                        </div>
+                    </div>
+                    <div class="main_section__right">
+                        <a href="./zoos/zoos.html">
+                            <div class="item"></div>
+                        </a>
+                        
+                    </div>
+                </div>
+            </section>
+            <section class="howitworks_section">
+                <div class="main_section2__wrapper">
+                    <div class="howitworks">
+                        <div class="howitworks__header">
+                            <p>how it works</p>
+                        </div>
+                        <div class="howitworks__context">
+                            <div class="howitworks__context-item">
+                                <div class='icon1'>                         
+                                </div>
+                                <p>Keep an eye on your favourite animals online</p>
+                            </div>
+                            <div class="howitworks__context-item">
+                                <div class='icon2'></div>
+                                <p>Become a part of the community</p>
+                            </div>
+                            <div class="howitworks__context-item">
+                                <div class='icon3'></div>
+                                <p>Support animals with the donations</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section1-background"></div>
+            </section>
+            <section class="gallery-section">
+                <div class="gallery_header">
+                    <div class="gallery_header__title">pets in zoo</div>
+                    <div class="gallery_header__btn">
+                        <button>
+                            <img src="./assets/icons/tv.svg" alt="hearth">
+                            <a href="../online-zoo/map-page/map.html">
+                                <p> choose your favourite</p>
+                            </a>
+                        </button> 
+                    </div>
+                </div>
+                <div class="gallery__wrapper">
+                    <div class="gallery_content" id="carousel">
+                        <ul class="gallery_content__items" id="content" >
+                                <li class="gallery_content__items-item1">
+                                    <a class="card" href="./page404/page404.html">
+                                        <div class="frame">
+                                            <div class="frame_mask">
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="gallery_content__items-item-context">
+                                            <div><p>
+                                               <b> Pandas</b>
+                                            <br> Shenshuping Gengda Panda Center</p> </div>
+                                            <img src="./assets/icons/tv.svg" alt="tv">
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="gallery_content__items-item2">
+                                    <a class="card" href="./page404/page404.html">
+                                        <div class="frame">
+                                            <div class="frame_mask">
+                                            </div>
+                                        </div>
+                                        <div class="gallery_content__items-item-context">
+                                            <div><p>
+                                                <b>Eagles</b>
+                                            <br> Shenshuping Gengda Panda Center</p> </div>
+                                            <img src="./assets/icons/tv.svg" alt="tv">
+                                        </div>
+                                    </a>    
+                                </li>
+                                <li class="gallery_content__items-item3">
+                                    <a class="card" href="./page404/page404.html">
+                                        <div class="frame">
+                                            <div class="frame_mask">
+                                        </div>
+                                        </div>
+                                        <div class="gallery_content__items-item-context">
+                                            <div><p>
+                                                <b>Gorillas</b>
+                                            <br> Shenshuping Gengda Panda Center</p> </div>
+                                            <img src="./assets/icons/tv.svg" alt="tv">
+                                        </div>
+                                    </a>
+                                </li>
+                                
+                                <li class="gallery_content__items-item4">
+                                    <a class="card" href="./page404/page404.html">
+                                        <div class="frame">
+                                            <div class="frame_mask">
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="gallery_content__items-item-context">
+                                            <div >
+                                            <p class="title"><b> Aligators</b></p>
+                                            <p class="subtitle">Shenshuping Gengda Panda Center</p>
+                                         </div>
+                                            <img src="./assets/icons/tv.svg" alt="tv">
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="gallery_content__items-item5">
+                                    <a class="card" href="./page404/page404.html">
+                                        <div class="frame">
+                                            <div class="frame_mask">
+                                            </div>
+                                        </div>
+                                        <div class="gallery_content__items-item-context">
+                                            <div><p>
+                                               <b> Elephants</b>
+                                            <br> Tembe Elephant Park</p> </div>
+                                            <img src="./assets/icons/tv.svg" alt="tv">
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="gallery_content__items-item6">
+                                    <a class="card" href="./page404/page404.html">
+                                        <div class="frame">
+                                            <div class="frame_mask">
+                                                
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="gallery_content__items-item-context">
+                                            <div><p>
+                                                <b>Lemurs</b>
+                                            <br> Madagascar</p> </div>
+                                            <img src="./assets/icons/tv.svg" alt="tv">
+                                        </div>
+                                </a>
+                            </li>
+                            <li class="gallery_content__items-item1">
+                                <a class="card" href="./page404/page404.html">
+                                    <div class="frame">
+                                        <div class="frame_mask">
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="gallery_content__items-item-context">
+                                        <div><p>
+                                           <b> Pandas</b>
+                                        <br> Shenshuping Gengda Panda Center</p> </div>
+                                        <img src="./assets/icons/tv.svg" alt="tv">
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="gallery_content__items-item2">
+                                <a class="card" href="./page404/page404.html">
+                                    <div class="frame">
+                                        <div class="frame_mask">
+                                        </div>
+                                    </div>
+                                    <div class="gallery_content__items-item-context">
+                                        <div><p>
+                                            <b>Eagles</b>
+                                        <br> Shenshuping Gengda Panda Center</p> </div>
+                                        <img src="./assets/icons/tv.svg" alt="tv">
+                                    </div>
+                                </a>    
+                            </li>
+                            <li class="gallery_content__items-item3">
+                                <a class="card" href="./page404/page404.html">
+                                    <div class="frame">
+                                        <div class="frame_mask">
+                                    </div>
+                                    </div>
+                                    <div class="gallery_content__items-item-context">
+                                        <div><p>
+                                            <b>Gorillas</b>
+                                        <br> Shenshuping Gengda Panda Center</p> </div>
+                                        <img src="./assets/icons/tv.svg" alt="tv">
+                                    </div>
+                                </a>
+                            </li>
+                            
+                            <li class="gallery_content__items-item4">
+                                <a class="card" href="./page404/page404.html">
+                                    <div class="frame">
+                                        <div class="frame_mask">
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="gallery_content__items-item-context">
+                                        <div >
+                                        <p class="title"><b> Aligators</b></p>
+                                        <p class="subtitle">Shenshuping Gengda Panda Center</p>
+                                     </div>
+                                        <img src="./assets/icons/tv.svg" alt="tv">
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="gallery_content__items-item5">
+                                <a class="card" href="./page404/page404.html">
+                                    <div class="frame">
+                                        <div class="frame_mask">
+                                        </div>
+                                    </div>
+                                    <div class="gallery_content__items-item-context">
+                                        <div><p>
+                                           <b> Elephants</b>
+                                        <br> Tembe Elephant Park</p> </div>
+                                        <img src="./assets/icons/tv.svg" alt="tv">
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="gallery_content__items-item6">
+                                <a class="card" href="./page404/page404.html">
+                                    <div class="frame">
+                                        <div class="frame_mask">
+                                            
+                                        </div>
+                                    </div>
+                                
+                                    <div class="gallery_content__items-item-context">
+                                        <div><p>
+                                            <b>Lemurs</b>
+                                        <br> Madagascar</p> </div>
+                                        <img src="./assets/icons/tv.svg" alt="tv">
+                                    </div>
+                            </a>
+                        </li>
+                        </ul>
+                    </div>
+                    <div class="sliders">
+                        <div class="sliders__topBtn" id="prev">
+                            <img src="./assets/icons/btn-slider.svg" alt="btn_slider-top" >
+                        </div>
+                        
+                        <div class="sliders__bottomBtn" id="next">
+                            <img src="./assets/icons/btn-slider.svg" alt="btn_slider-bottom" >
+                        </div>
+                        <img id='Penguin'src="./assets/icons/Penguin.svg" alt="Penguin">
+                    </div>
+                </div>
+            </section>
+            <section class="pay_section">
+                <div class="pay__wrapper">
+                    <div class="pay">
+                        <div class="pay__header">
+                            <p>pay and feed</p>
+                            <button class="pay__header-btn">donate</button>
+                        </div>
+                        <div class="pay__context">
+                            <div class="pay__context-item">
+                                <div class='icon4'>                      
+                                </div>
+                                <p>You donate to your favourite animals </p>
+                            </div>
+                            <div class="arrows">
+                                <img src="./assets/icons/arrow.svg" alt="arrow">
+                                <img class="arrow320" src="./assets/icons/arrow320.svg" alt="arrow320"  width="52px" height="52px">
+                            </div>
+                            <div class="pay__context-item">
+                                <div class='icon6'></div>
+                                <p>Zoo Keepers feed animals with their favourite food</p>
+                            </div>
+                            <div class="arrows">
+                                <img src="./assets/icons/arrow.svg" alt="arrow">
+                                <img class="arrow320" src="./assets/icons/arrow320.svg" alt="arrow320"  width="52px" height="52px">
+                            </div>                            
+                            <div class="pay__context-item">
+                                <div class='icon5'></div>
+                                <p>Animals are healthy and happy</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="testimonials_section">
+                <div class="testimonials__wrapper">
+                    <div class="testimonials">
+                        <div class="testimonials__header">
+                            <p>testimonials</p>
+                            <button class="testimonials__header-btn">
+                                <img src="./assets/icons/chat.svg" alt="chat">
+                                <p>
+                                    leave feedback
+                                </p>
+                            </button>
+                        </div>
+                        <div class="testimonials_wrapper" id="testi_carousel">
+                            <div class="testimonials__context" id="testi_content">
+                                <div class="testimonials__context-item">
+                                    <div class='bg-opinie'> 
+                                        <p class="date"> 20 Decepmer 2020</p>
+                                        <p class="text"> Lorem ipsum dolor sit amet consectetur.</p>                    
+                                    </div>
+                                    <div class="author">
+                                        <img src="./assets/icons/autor1.svg" alt="author">
+                                        <p> <b>Ahmud</b> </p>
+                                    </div>
+                                </div>
+                                <div class="testimonials__context-item">
+                                    <div class='bg-opinie'> 
+                                        <p class="date"> 20 Decepmer 2020</p>
+                                        <p class="text"> Lorem ipsum dolor sit amet consectetur.</p>                    
+                                    </div>
+                                    <div class="author">
+                                        <img src="./assets/icons/author2.svg" alt="author">
+                                        <p> <b>Amely</b> </p>
+                                    </div>
+                                </div>
+                                <div class="testimonials__context-item">
+                                    <div class='bg-opinie'> 
+                                        <p class="date"> 20 Decepmer 2020</p>
+                                        <p class="text"> Lorem ipsum dolor sit amet consectetur</p>                    
+                                    </div>
+                                    <div class="author">
+                                        <img src="./assets/icons/author3.svg" alt="author">
+                                        <p> <b>Chris </b> </p>
+                                    </div>
+                                </div>
+                                <div class="testimonials__context-item">
+                                    <div class='bg-opinie'> 
+                                        <p class="date"> 20 Decepmer 2020</p>
+                                        <p class="text"> Awesome place to observe my favourite aligators at Florida, the quality of the video is great.</p>                    
+                                    </div>
+                                    <div class="author">
+                                        <img src="./assets/icons/autor1.svg" alt="author">
+                                        <p> <b>Ahmud</b> </p>
+                                    </div>
+                                </div>
+                                <div class="testimonials__context-item">
+                                    <div class='bg-opinie'> 
+                                        <p class="date"> 20 Decepmer 2020</p>
+                                        <p class="text"> Lorem ipsum dolor sit amet consectetur.</p>                    
+                                    </div>
+                                    <div class="author">
+                                        <img src="./assets/icons/author2.svg" alt="author">
+                                        <p> <b>Amely</b> </p>
+                                    </div>
+                                </div>
+                                <div class="testimonials__context-item">
+                                    <div class='bg-opinie'> 
+                                        <p class="date"> 20 Decepmer 2020</p>
+                                        <p class="text"> Lorem ipsum dolor sit amet consectetur</p>                    
+                                    </div>
+                                    <div class="author">
+                                        <img src="./assets/icons/author3.svg" alt="author">
+                                        <p> <b>Chris </b> </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="look-section">
+                <div class="look__wrapper">
+                    <div class="look__header">
+                        <h3>Look at this beautiful animals</h3>
+                    </div>
+                    <div class="look">
+                        <div class="look__list">
+                            <a  class="look__list-item">
+                                <div  class="look__list-item_mask" ></div>
+                                <svg  id="Pandas" class="look__list-item_img">
+                                    <defs>
+                                      <clipPath id="mask_animal">
+                                        <path d="M92.0779 23.2277C99.8821 33.2848 102.05 46.9928 98.0033 57.5322C93.9567 68.0715 83.84 75.511 72.2059 81.2973C60.6441 87.0836 47.5647 91.2856 36.4364 87.6347C25.3082 84.0527 16.0587 72.7556 12.0843 59.3921C8.18215 46.0285 9.55512 30.5983 17.9375 20.4723C26.3921 10.2774 41.7838 5.31773 56.3084 6.07546C70.7607 6.83319 84.2736 13.2394 92.0779 23.2277Z" fill="#C5E1E6"/>
+                                      </clipPath>
+                                    </defs>
+                                  </svg>
+                                <p>Pandas</p>
+                            </a>
+                            <a  class="look__list-item">
+                                <div  class="look__list-item_mask" ></div>
+                                <svg  id="Gorillas" class="look__list-item_img">
+                                    <defs>
+                                      <clipPath id="mask_animal">
+                                        <path d="M92.0779 23.2277C99.8821 33.2848 102.05 46.9928 98.0033 57.5322C93.9567 68.0715 83.84 75.511 72.2059 81.2973C60.6441 87.0836 47.5647 91.2856 36.4364 87.6347C25.3082 84.0527 16.0587 72.7556 12.0843 59.3921C8.18215 46.0285 9.55512 30.5983 17.9375 20.4723C26.3921 10.2774 41.7838 5.31773 56.3084 6.07546C70.7607 6.83319 84.2736 13.2394 92.0779 23.2277Z" fill="#C5E1E6"/>
+                                      </clipPath>
+                                    </defs>
+                                  </svg>
+                                <p>Gorillas</p>
+                            </a>
+                            <a  class="look__list-item">
+                                <div  class="look__list-item_mask" ></div>
+                                <svg  id="Elephant" class="look__list-item_img">
+                                    <defs>
+                                      <clipPath id="mask_animal">
+                                        <path d="M92.0779 23.2277C99.8821 33.2848 102.05 46.9928 98.0033 57.5322C93.9567 68.0715 83.84 75.511 72.2059 81.2973C60.6441 87.0836 47.5647 91.2856 36.4364 87.6347C25.3082 84.0527 16.0587 72.7556 12.0843 59.3921C8.18215 46.0285 9.55512 30.5983 17.9375 20.4723C26.3921 10.2774 41.7838 5.31773 56.3084 6.07546C70.7607 6.83319 84.2736 13.2394 92.0779 23.2277Z" fill="#C5E1E6"/>
+                                      </clipPath>
+                                    </defs>
+                                  </svg>
+                                <p>Elephant</p>
+                            </a>
+                            <a class="look__list-item">
+                                <div  class="look__list-item_mask" ></div>
+                                <svg  id="Aligators" class="look__list-item_img">
+                                    <defs>
+                                      <clipPath id="mask_animal">
+                                        <path d="M92.0779 23.2277C99.8821 33.2848 102.05 46.9928 98.0033 57.5322C93.9567 68.0715 83.84 75.511 72.2059 81.2973C60.6441 87.0836 47.5647 91.2856 36.4364 87.6347C25.3082 84.0527 16.0587 72.7556 12.0843 59.3921C8.18215 46.0285 9.55512 30.5983 17.9375 20.4723C26.3921 10.2774 41.7838 5.31773 56.3084 6.07546C70.7607 6.83319 84.2736 13.2394 92.0779 23.2277Z" fill="#C5E1E6"/>
+                                      </clipPath>
+                                    </defs>
+                                  </svg>
+                                <p>Aligators</p>
+                            </a>
+                            <a class="look__list-item">
+                                <div  class="look__list-item_mask" ></div>
+                                <svg  id="Lemurs" class="look__list-item_img">
+                                    <defs>
+                                      <clipPath id="mask_animal">
+                                        <path d="M92.0779 23.2277C99.8821 33.2848 102.05 46.9928 98.0033 57.5322C93.9567 68.0715 83.84 75.511 72.2059 81.2973C60.6441 87.0836 47.5647 91.2856 36.4364 87.6347C25.3082 84.0527 16.0587 72.7556 12.0843 59.3921C8.18215 46.0285 9.55512 30.5983 17.9375 20.4723C26.3921 10.2774 41.7838 5.31773 56.3084 6.07546C70.7607 6.83319 84.2736 13.2394 92.0779 23.2277Z" fill="#C5E1E6"/>
+                                      </clipPath>
+                                    </defs>
+                                  </svg>
+                                <p>Lemurs</p>
+                            </a>
+                            <a class="look__list-item">
+                                <div  class="look__list-item_mask" ></div>
+                                <svg  id="Pandas" class="look__list-item_img">
+                                    <defs>
+                                      <clipPath id="mask_animal">
+                                        <path d="M92.0779 23.2277C99.8821 33.2848 102.05 46.9928 98.0033 57.5322C93.9567 68.0715 83.84 75.511 72.2059 81.2973C60.6441 87.0836 47.5647 91.2856 36.4364 87.6347C25.3082 84.0527 16.0587 72.7556 12.0843 59.3921C8.18215 46.0285 9.55512 30.5983 17.9375 20.4723C26.3921 10.2774 41.7838 5.31773 56.3084 6.07546C70.7607 6.83319 84.2736 13.2394 92.0779 23.2277Z" fill="#C5E1E6"/>
+                                      </clipPath>
+                                    </defs>
+                                  </svg>
+                                <p>Pandas</p>
+                            </a>
+                            
+                        </div>
+                        <div class="sliders">
+                            <div class="sliders__topBtn">
+                                <img src="./assets/icons/btn-slider.svg" alt="btn_slider-top">
+                            </div>
+                            
+                            <div class="sliders__bottomBtn">
+                                <img src="./assets/icons/btn-slider.svg" alt="btn_slider-bottom">
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+    </div>
+    <footer class="page_footer">
+        <div class="page_header__wrapper">
+            <div class="header__logo">
+                <div class="header__logo-title">
+                    <div>
+                        <a href="./index.html">
+                        <b>online<br> z</b>
+                        <img src="./assets/icons/eyes.svg" alt="eyes">
+                    </div>
+                </div>
+            </div>
+            <div class="header_menu">
+                <nav class="header_menu-nav">
+                    <ul class="header_menu-nav__items">
+                        <li class="header_menu-nav__items-item item_active"><a href="index.html">about</a></li>
+                        <li class="header_menu-nav__items-item"><a href="./map-page/map.html">map</a></li>
+                        <li class="header_menu-nav__items-item"><a href="./zoos/zoos.html">zoos</a></li>
+                        <li class="header_menu-nav__items-item"><a href="./page404/page404.html">contact us</a></li>
+                        <li class="header_menu-nav__items-item"><a href="https://www.figma.com/file/vzrwoqf0kSG1uOify8BRBR/online-zoo">design</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
+    <div class="modal hidden" id="modal">
+        <div>
+            <div class="head">
+                <a href="./index.html"><b>online<br> z</b>
+                    <img src="./assets/icons/eyes.svg" alt="eyes">
+                </a>
+            </div>
+            <div class="container">
+                <div class="content">
+                    <div class="content_tab " id="tabSignUp">
+                        <div class="content_type">
+                            <button class="tablink active" id="btn-createAcc">create account</button>
+                            <button class="tablink " onclick="openPage('tabLogIn', this)" id="btn-logIn">log in</button>
+                        </div>
+                        <div class="content_social">
+                            <button class="content_social__btns" id="tab1_google"> 
+                                <img src="./assets/icons/Google Logo.png" alt="google-logo"> 
+                                <p class="content_social_text"> google sign in</p>
+                            </button>
+                            <button class="content_social__btns" id="tab1_fb">
+                                <img src="./assets/icons/Facebook Logo.png" alt="fb-logo">
+                                <p class="content_social_text">facebook sign in</p>   
+                            </button>
+                        </div>
+                        <div class="content_user">
+                            <label for="name">name</label>
+                            <input class="content_user__input name" type="name" id="name" required>
+                            <label for="email">email</label>
+                            <input class="content_user__input" type="email"  id="email">
+                            <label for="password">password</label>
+                            <input class="content_user__input" type="password"  id="password" required>
+                        </div>
+                        <div class="content_accept">
+                            <input type="checkbox" name="checkbox" id="checkbox" >
+                            <p class="content_user__input">Agree with the User Agreement and Privacy Policy </p>
+                        </div>
+                        <div class="content_send">
+                            <button class='btn-send invalid' id="send" type="submit">send</button>
+                        </div>
+                    </div>
+                    <div class="content_tab" id="tabLogIn">
+                        <div class="content_type">
+                            <button class="tablink" onclick="openPage('tabSignUp', this)" id="btn-createAcc">create account</button>
+                            <button class="tablink active" id="btn-logIn">log in</button>
+                        </div>
+                        <div class="content_social">
+                            <button class="content_social__btns" id="tab2_google">
+                                <img src="./assets/icons/Google Logo.png" alt="google-logo"> 
+                                <p class="content_social_text"> google log in</p>
+                            </button>
+                            <button class="content_social__btns" id="tab2_fb">
+                                <img src="./assets/icons/Facebook Logo.png" alt="fb-logo">
+                                <p class="content_social_text">facebook log in</p>   
+                            </button>
+                        </div>
+                        <div class="content_user">
+                            <label for="email">email</label>
+                            <input class="content_user__input" type="email"  id="emailLog">
+                            <label for="password">password</label>
+                            <input class="content_user__input" type="password"  id="passwordLog" required>
+                        </div>
+                        <div class="content_send">
+                            <button class='btn-send invalid' id="sendLog" type="submit">send</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cover hidden" id="cover"></div>
+    <script src="./menu.js" refer></script>
+    <script src="./modals.js" refer></script>
+    <script src="./slider-gallery.js" refer></script>
+    <script src="./autoSlider.js" refer></script>
+</body>
+</html>
+

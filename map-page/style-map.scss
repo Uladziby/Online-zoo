@@ -1,0 +1,129 @@
+@import "../styles/style.scss";
+@import "../styles/variables.scss";
+@import "../styles/mixines.scss";
+@import '../styles/media.scss';
+body{
+    overflow-x: hidden;
+}
+
+
+
+.header__menu-nav{
+    width: 100%;
+}
+.map__wrapper{
+    background: #2A8086;
+    height: calc(100vh - 400px);
+    position: relative;
+    min-width: 320px;
+    overflow: hidden;
+}
+
+#map{
+    position: absolute;
+}
+.map{
+    
+    width: 100%;
+
+    &__header{
+        padding: 3rem 20rem;
+        width: 100%;
+        @include Roboto_Mono;
+        color: $color_white__primary;
+        background: #2A8086;
+        
+    }
+    &_field{
+        width: 100%;
+        
+        
+    }
+    &__buttons{
+        position: absolute;
+        left: 70%;
+        top: 70%;
+        display: flex;
+        padding: 0rem 15rem;
+    
+        img{
+            margin: 0 1rem;
+            padding: 1.5rem;
+            background: rgba(255, 255, 255, 0.4);
+            border: 1.5px solid #2A8086;
+            border-radius: 50%;
+            transition: transform .3s;
+            cursor: pointer;
+
+        }
+        img:hover{
+            transform: scale(1.1);
+
+        }
+    }
+}
+
+.map_items{
+    &__item{   
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        align-items: center;
+        cursor: pointer;
+        
+        &_mask{
+            position: absolute;
+            opacity: 0;
+            width: 105px;
+            height: 95px;
+            transition: transform 0.5s ease-in-out;
+            mask: url(../assets/icons/icon-mask.svg);
+            background-color: $color-btn-text;
+        }
+        &_img{
+            margin: 6px 0rem;
+            clip-path: url(#mask_animal);
+            width: 107px;
+            height: 74px;
+            object-fit: cover;
+            border-style: none;
+        }
+    }
+        &__item:hover .map_items__item_mask{
+            opacity: 1;
+            transform: rotate(1turn);
+        }
+  
+    &__item#Pandas{
+        
+        top: 40%;
+        left: 65%;       
+    }
+    &__item#Gorillas{
+        position: absolute;
+        top: 52%;
+        left: 48%;      
+    }
+    &__item#Eagles{
+        top: 40%;
+        left: 18%      
+    }
+    &__item#Alligators{
+        top: 54%;
+        left: 29%;       
+    }
+    @include icons_animals;
+
+}
+
+.page_footer{
+    .header__menu-nav{
+        width: 50%;
+    }
+    
+    background-color:#0D444D;
+    .page_header__wrapper{
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0.01);
+    }
+}
+@import "media_map";

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./zoos-style.css ">
+    <title>zoos</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="page_header">
+            <div class="page_header__wrapper">
+                <div class="header__logo">
+                    <div class="header__logo-title">
+                        <a href="./index.html"><b>online<br> z</b>
+                            <img src="../assets/icons/eyes.svg" alt="eyes">
+                        </a>
+                        <h1>online zoo</h1>
+                    </div>
+                </div>
+                <div class="header_menu" id="header_menu">
+                    <nav class="header_menu-nav">
+                        <ul class="header_menu-nav__items">
+                            <li class="header_menu-nav__items-item item_active"><a href="../index.html">about</a></li>
+                            <li class="header_menu-nav__items-item"><a href="../map-page/map.html">map</a></li>
+                            <li class="header_menu-nav__items-item"><a href="../zoos/zoos.html">zoos</a></li>
+                            <li class="header_menu-nav__items-item"><a href="../page404/page404.html">contact us</a></li>
+                            <li class="header_menu-nav__items-item"><a href="https://www.figma.com/file/vzrwoqf0kSG1uOify8BRBR/online-zoo">design</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header_login">
+                    <div class="header_login__search">
+                        <input class="header_login__search-input">
+                        <img src="../assets/icons/search.svg" alt="search">
+                    </div>
+                    <div class="header_login__log" >
+                        <button id="logIn">log in</button>
+                    </div>
+                    <div class="header_login__sign" >
+                       <button id="signUp">sign up</button>
+                    </div>
+                    <div class="header_login__search-login btns">
+                        <button class="header_login__search-login" id="btn_login">
+                            <img src="../assets/icons/login1200.svg" alt="login">
+                        </button>
+                        <button id="nickname"></button>
+                    </div>
+                </div>
+                <button class="header_btn-menu" id="burger_menu">
+                    <img src="../assets/icons/Burger-menu.svg" alt="btn-menu">
+                </button>
+            </div>
+        </header>
+        <div class="page_wrapper">
+            <aside class="sidebar">
+                <div class="zoos_sidebar">
+                    <ul class="zoos_sidebar__list">
+                        <li class="zoos_sidebar__list__item">
+                            <a id="Pandas" href="../page404/page404.html" class="zoos_sidebar__list__item">
+                                <div class="zoos_sidebar__list__item_mask"></div>
+                                <svg id="Pandas" class="zoos_sidebar__list__item_img">
+                                    <defs>
+                                        <clipPath id="mask_animal">
+                                            <path
+                                                d="M92.0779 23.2277C99.8821 33.2848 102.05 46.9928 98.0033 57.5322C93.9567 68.0715 83.84 75.511 72.2059 81.2973C60.6441 87.0836 47.5647 91.2856 36.4364 87.6347C25.3082 84.0527 16.0587 72.7556 12.0843 59.3921C8.18215 46.0285 9.55512 30.5983 17.9375 20.4723C26.3921 10.2774 41.7838 5.31773 56.3084 6.07546C70.7607 6.83319 84.2736 13.2394 92.0779 23.2277Z"
+                                                fill="#C5E1E6" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="zoos_sidebar__list-item">
+                            <a id="Aligators" href="../page404/page404.html" class="zoos_sidebar__list__item">
+                                <div class="zoos_sidebar__list__item_mask"></div>
+                                <svg id="Aligators" class="zoos_sidebar__list__item_img">
+                                    <defs>
+                                        <clipPath id="mask_animal">
+                                            <path
+                                                d="M92.0779 23.2277C99.8821 33.2848 102.05 46.9928 98.0033 57.5322C93.9567 68.0715 83.84 75.511 72.2059 81.2973C60.6441 87.0836 47.5647 91.2856 36.4364 87.6347C25.3082 84.0527 16.0587 72.7556 12.0843 59.3921C8.18215 46.0285 9.55512 30.5983 17.9375 20.4723C26.3921 10.2774 41.7838 5.31773 56.3084 6.07546C70.7607 6.83319 84.2736 13.2394 92.0779 23.2277Z"
+                                                fill="#C5E1E6" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="zoos_sidebar__list-item">
+                            <a id="Gorillas" href="../page404/page404.html" class="zoos_sidebar__list__item">
+                                <div class="zoos_sidebar__list__item_mask"></div>
+                                <svg id="Gorillas" class="zoos_sidebar__list__item_img">
+                                    <defs>
+                                        <clipPath id="mask_animal">
+                                            <path
+                                                d="M92.0779 23.2277C99.8821 33.2848 102.05 46.9928 98.0033 57.5322C93.9567 68.0715 83.84 75.511 72.2059 81.2973C60.6441 87.0836 47.5647 91.2856 36.4364 87.6347C25.3082 84.0527 16.0587 72.7556 12.0843 59.3921C8.18215 46.0285 9.55512 30.5983 17.9375 20.4723C26.3921 10.2774 41.7838 5.31773 56.3084 6.07546C70.7607 6.83319 84.2736 13.2394 92.0779 23.2277Z"
+                                                fill="#C5E1E6" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="zoos_sidebar__list-item">
+                            <a id="Eagles" href="../page404/page404.html" class="zoos_sidebar__list__item">
+                                <div class="zoos_sidebar__list__item_mask"></div>
+                                <svg id="EaglesImg" class="zoos_sidebar__list__item_img">
+                                    <defs>
+                                        <clipPath id="mask_animal">
+                                            <path
+                                                d="M92.0779 23.2277C99.8821 33.2848 102.05 46.9928 98.0033 57.5322C93.9567 68.0715 83.84 75.511 72.2059 81.2973C60.6441 87.0836 47.5647 91.2856 36.4364 87.6347C25.3082 84.0527 16.0587 72.7556 12.0843 59.3921C8.18215 46.0285 9.55512 30.5983 17.9375 20.4723C26.3921 10.2774 41.7838 5.31773 56.3084 6.07546C70.7607 6.83319 84.2736 13.2394 92.0779 23.2277Z"
+                                                fill="#C5E1E6" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+            <main>
+                <section class="zoos_section">
+                    <div class="zoos_content">
+                        <div class="zoos_content__header">
+                            <div class="zoos_content__header-title">
+                                <p>the giant pandas</p>
+                            </div>
+                            <div class="zoos_content__header-btns">
+                                <button>
+                                    <img src="../assets/icons/i.svg" alt="i">
+                                </button>
+                                <button class="btn_favorite" id="favorite">
+                                    <img src="../assets/icons/fav-hearth.svg" alt="hearth i"  width="42px" height="42px">
+                                </button>
+                                <button class="btn_favorite non-active" id="favorite-active">
+                                    <img src="../assets/icons/favorite-img.svg" alt="hearth i">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="zoos_content__player">
+                            <h3>main cameras</h3>
+                            <div class="main-player">
+                                <iframe class="main-cameras__video"
+                                    src="https://www.youtube.com/embed/OObOQ2GElhA?autoplay=0" title="YouTube video player"
+                                    frameborder="0"
+                                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen="">
+                                </iframe>
+                            </div>
+                            <div class="zoos_content__player-list">
+                                <h4>side cameras</h4>
+                                <div class="side-cameras">
+                                    <iframe class="side-cameras__camera" width="380" height="240"
+                                        src="https://www.youtube.com/embed/D0eqnda8dOk?autoplay=0&amp;controls=0&amp;mute=1"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen=""></iframe>
+                                    <iframe class="side-cameras__camera" width="380" height="240"
+                                        src="https://www.youtube.com/embed/65JHo3Cy2tY?autoplay=0&amp;controls=0&amp;mute=1"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen=""></iframe>
+                                    <iframe class="side-cameras__camera" width="380" height="240"
+                                        src="https://www.youtube.com/embed/D0eqnda8dOk?autoplay=0&amp;controls=0&amp;mute=1"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen=""></iframe>
+    
+                                    <div class="sliders">
+                                        <div class="sliders__topBtn" id="prev">
+                                            <img src="../assets/icons/btn-slider.svg" alt="btn_slider-top" >
+                                        </div>
+                                        
+                                        <div class="sliders__bottomBtn" id="next">
+                                            <img src="../assets/icons/btn-slider.svg" alt="btn_slider-bottom" >
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="zoos_info">
+                            <div class="zoos_info__about">
+                                <h2 class="zoos_info__about_title">Information</h2>
+                                <div class="zoos_info__about_list">
+                                    <div class="zoos_info__about_list-items">
+                                        <h4 class="zoos_info__about_list-items item">Zoo</h4>
+                                        <a href="https://en.wikipedia.org/wiki/Wolong_National_Nature_Reserve"
+                                            class="about__text">Shenshuping Gengda Panda Center</a>
+                                    </div>
+                                    <div class="zoos_info__about_list-items item">
+                                        <h3 class="about__subtitle">Type of aviary</h3>
+                                        <p class="about__text">Imitation of the natural environment</p>
+                                    </div>
+                                    <div class="zoos_info__about_list-items item">
+                                        <h3 class="item__subtitle">Habitat</h3>
+                                        <a href="https://en.wikipedia.org/wiki/Mountains_of_Southwest_China"
+                                            class="about__text">Mountains of southwest China</a>
+                                    </div>
+                                    <div class="zoos_info__about_list-items item">
+                                        <h3>Type of food</h3>
+                                        <p>Bamboo</p>
+                                    </div>
+                                    <div class="zoos_info__about_list-items item">
+                                        <h3>Population in the world</h3>
+                                        <p>600</p>
+                                    </div>
+                                    <div class="zoos_info__about_list-items item">
+                                        <h3>About species</h3>
+                                        <p>The yards at Shenshuping Gengda Panda Center in China's Wolong Valley are filled
+                                            with bamboo--making for some very happy panda residents.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="zoos_info__facts">
+                                <h4 class="zoos_info__facts title">Interesting Facts</h4>
+                                <ul class="zoos_info__facts_list">
+                                    <li class="zoos_info__facts_list-item">The Giant Pandas are omnivores. But whilst pandas
+                                        will occasionally eat small animals and fish, bamboo counts for 99 percent of their
+                                        diet.</li>
+                                    <li class="zoos_info__facts_list-item">Pandas are BIG eaters – every day they fill their
+                                        tummies for up to 12 hours, shifting up to 12 kilograms of bamboo.</li>
+                                    <li class="zoos_info__facts_list-item">The giant panda’s scientific name is Ailuropoda
+                                        melanoleuca, which means “black and white cat-foot”.</li>
+                                    <li class="zoos_info__facts_list-item">Female pandas give birth to one or two cubs every
+                                        two years. Cubs stay with their mothers for 18 months before venturing off on their
+                                        own.</li>
+                                    <li class="zoos_info__facts_list-item">Baby pandas are born pink and measure about 15cm.
+                                    </li>
+                                    <li class="zoos_info__facts_list-item">These beautiful bears are endangered, and it’s
+                                        estimated that only around 1,000 remain in the wild. That’s why we need to do all we
+                                        can to protect them!</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="zoos_bottom">
+                    <div class="zoos_bottom__wrapper">
+                        <a href="../page404/page404.html">
+                            Donate to volunteers
+                        </a>
+                    </div>
+                </section>   
+            </main>
+            
+        </div>    
+        <footer class="page_footer">
+            <div class="page_header__wrapper">
+                <div class="header__logo">
+                    <div class="header__logo-title">
+                        <div><a href="../index.html"><b>online<br> z</b>
+                                <img src="../assets/icons/eyes.svg" alt="eyes">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="header_menu">
+                    <nav class="header__menu-nav">
+                        <ul class="header_menu-nav__items">
+                            <li class="header_menu-nav__items-item item_active"><a href="../index.html">about</a></li>
+                            <li class="header_menu-nav__items-item"><a href="../map-page/map.html">map</a></li>
+                            <li class="header_menu-nav__items-item"><a href="../zoos/zoos.html">zoos</a></li>
+                            <li class="header_menu-nav__items-item"><a href="../page404/page404.html">contact us</a></li>
+                            <li class="header_menu-nav__items-item"><a
+                                    href="https://www.figma.com/file/vzrwoqf0kSG1uOify8BRBR/online-zoo">design</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="../zoos.js" refer></script>
+    <script src="../slider-gallery.js" refer></script>
+    <script src="../modals.js" refer></script>
+</body>
+
+</html>
