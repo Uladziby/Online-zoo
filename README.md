@@ -1,5 +1,5 @@
 # Online-zoo
-https://github.com/uladziby/online-zoo/index.html
+https://rolling-scopes-school.github.io/uladziby-JSFE2021Q1/online-zoo/
 
 
 https://uladziby.github.io/Online-zoo/
